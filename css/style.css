@@ -6,17 +6,53 @@ html{
 *::before{
     box-sizing: inherit;
 }
+
+:root {
+    /* text color */
+    --text-black-color: #000;
+    --text-light-color: #FAFAFA;
+    --accent-color-yellow: #FFBD59;
+    --accent-color-light_braun: #BEA495;
+    --accent-color-dark_braun: #7B6152; 
+    /* --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color-focus: #404BBF; */
+
+    /* --logo-text-white: #F4F4FD;
+    --text-footer-white: #E7E9FC;
+    --icons-hover-color: #31D0AA;
+    --icons-border: #8E8F99; */
+
+    /* bg color */
+    --primary-bg-color: #FFF8F3;
+    --second-bg-color: #A5978E;
+    /* --footer-bg-color: #2E2F42;; */
+    
+    /* fonts */
+    --title-fonts-family: 'Yeseva One', serif;
+    --main-fonts-family: 'Comfortaa', 'Roboto', sans-serif;
+
+    /* others */
+    /* --header-idx: 100;
+    --modal-idx: 1000;
+    --anim-fast: 1300ms ease;
+    --anim-slow: 1800ms ease-out; */
+}
+
 body{
-    color: var(--, #000);
-    font-family: Comfortaa;
+    color: var(--text-black-color);
+    font-family: var(--main-fonts-family);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.14;
 }
 a{
  text-decoration: none;
  color: inherit;
+}
+ul{
+    list-style: none;
 }
 .container{
     max-width: 1180px;
@@ -26,7 +62,7 @@ a{
 }
 
 header{
-    background-color: #FFF8F3;
+    background-color: var(--primary-bg-color);
 }
 .header__inner{
     padding-top: 4px;
@@ -38,4 +74,37 @@ header{
     display: flex;
     gap: 20px;
 }
+.menu__list-link{
+   text-transform: uppercase; 
+}
+.phone{
+    position: relative;
+}
+.phone::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/sharp-phone.svg);
+    width: 20px;
+    height: 20px;
+    left: -23px;
+    top: -3px;
+}
 
+/* --*FOOTER*-- */
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+.email{
+    margin: 17px 0;
+}
+.footer__social{
+    display: flex;
+    gap: 15px;
+}
