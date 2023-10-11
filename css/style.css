@@ -193,7 +193,7 @@ ul{
         position: absolute;
         left: 0;
         top: 0;
-        transform: translateY(-200%);
+        transform: translateY(-110%);
         transition: transform .5s ease;    
     }
     .header__menu-list.menu--open{
