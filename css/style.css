@@ -7,10 +7,16 @@ html{
     box-sizing: inherit;
 }
 body{
-
+    color: var(--, #000);
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 a{
-
+ text-decoration: none;
+ color: inherit;
 }
 .container{
     max-width: 1180px;
@@ -23,9 +29,13 @@ header{
     background-color: #FFF8F3;
 }
 .header__inner{
-    margin-top: 4px;
+    padding-top: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.menu__list{
+    display: flex;
+    gap: 20px;
 }
 
