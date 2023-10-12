@@ -308,6 +308,15 @@ button{
     gap: 15px;
 }
 
+
+/* --*ADAPTIVES*-- */
+@media (max-width: 1050px){
+    .section__inner{
+        grid-template-columns: 290px auto;
+        gap: 0 10px;
+    }
+}
+
 @media (max-width: 1000px){
     .container{
         padding-left: 20px;
@@ -331,6 +340,13 @@ button{
     }
     .about__list{
         padding-left: 20px;
+    }
+    .products__content{
+        /* gap: 67px; */
+        gap: 10px;
+    }
+    .section__text{
+      font-size: 10px;  
     }
 }
 @media (max-width: 900px){
