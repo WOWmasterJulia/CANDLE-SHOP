@@ -319,3 +319,33 @@ button{
         padding: 30px 0 50px;
     }
 }
+
+@media (max-width: 360px){
+    .top__img-l{
+     width: 185px; 
+    }
+    .top__img{
+     left: auto;
+     right: 0;
+    
+    }
+    .top__content{
+        width: 200px;
+        padding: 20px 0 0;
+         position: relative;
+     z-index: 1;
+    }
+    .top__title{
+        font-size: 18px;
+    }
+    .top__text{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 350px){
+    .top__img-l{
+     width: 135px;
+     margin-top: 20px; 
+    }
+}
