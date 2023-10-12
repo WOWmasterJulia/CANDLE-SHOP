@@ -242,6 +242,7 @@ button{
 .section__content-descr{
     display: grid;
     grid-template-columns: auto auto;
+    padding-bottom: 92px;
 }
 .products__content {
     gap: 50px 90px;
