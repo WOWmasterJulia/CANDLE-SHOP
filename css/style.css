@@ -151,6 +151,35 @@ button{
 }
 
 
+/* --*ABOUT*-- */
+.about{
+    background-color: var(--second-bg-color);
+    color: var(--text-light-color);
+    padding: 50px 0 60px;
+}
+.about__inner{
+    display: flex;
+    align-items: center;
+}
+.about__content{
+    width: 370px;
+
+}
+.about__title{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.about__text{
+    margin-bottom: 15px;
+}
+.about__list{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+
+
 
 
 /* --*FOOTER*-- */
