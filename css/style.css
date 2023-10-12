@@ -56,6 +56,11 @@ a{
 ul{
     list-style: none;
 }
+/* .list {
+    list-style: none;
+    padding: 0; 
+    margin: 0;   
+} */
 
 button{
     border: none;
@@ -155,14 +160,14 @@ button{
 .about{
     background-color: var(--second-bg-color);
     color: var(--text-light-color);
-    padding: 50px 0 60px;
+    padding: 50px;
 }
 .about__inner{
     display: flex;
     align-items: center;
 }
 .about__content{
-    width: 370px;
+    min-width: 370px;
 
 }
 .about__title{
@@ -174,8 +179,38 @@ button{
 }
 .about__list{
     display: flex;
+    padding-left: 110px;
+    padding-bottom: 48px;
     align-items: center;
     gap: 0 20px;
+    list-style: none;
+    flex-basis: 930px;
+    position: relative;
+}
+.about__list::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/about-decor.png);
+    width: 22px;
+    height: 30px;
+}
+.about__list::after{
+    content: '';
+    position: absolute;
+    left: 22px;
+    bottom: 13px;
+    background-color: var(--accent-color-dark_braun);
+    width: 1000%;
+    height: 1px;
+}
+.about__item-img{
+    margin-bottom: 10px;
+}
+.about__item-text{
+    font-size: 11px;
+
 }
 
 
