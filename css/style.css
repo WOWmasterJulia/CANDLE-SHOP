@@ -448,7 +448,9 @@ button{
     }
     .team__content{
         gap: 30px 20px;
-    }  
+        padding-bottom: 0;
+    } 
+    
 }
 
 @media (max-width: 900px){
@@ -663,6 +665,10 @@ button{
         right: auto;
         left: 105px;
     }
+    .team__content{
+        padding-bottom: 0;
+    }
+    
 }
 
 @media (max-width: 500px){
@@ -748,9 +754,7 @@ button{
     .team{
         margin-bottom: 50px;
     }
-    .team__content{
-        padding-bottom: 0;
-    }
+    
     .team__item-box{
         /* right: auto; */
         left: 80px;
