@@ -414,6 +414,7 @@ button{
     bottom: 10px;
     right: 0;
     margin-right: 10px;
+    padding: 20px 35px;
 }
 .feedback__content .swiper-pagination{
     bottom: 50px;
@@ -548,6 +549,21 @@ button{
         gap: 30px 20px;
         padding-bottom: 0;
     } 
+    .feedback__item-video{
+        width: 300px;
+    }
+    .feedback__item-img{
+        width: 300px;
+    } 
+    .feedback__slider{
+        width: 575px;
+    }
+    .feedback__item-btn{
+    padding: 15px 20px;
+    }
+    .certificates__content .swiper-pagination{
+      text-align: center;  
+    }
     
 }
 
@@ -592,7 +608,8 @@ button{
     }
     .steps__item-text{
         font-size: 10px;
-    }    
+    }  
+     
 }
 
 @media (max-width: 790px){
@@ -711,6 +728,18 @@ button{
     .team__item-descr{
         font-size: 7px;
     }
+    .feedback__item-video{
+        width: 200px;
+    }
+    .feedback__item-img{
+        width: 200px;
+    }
+    .feedback__slider{
+        width: 447px;
+    }
+    .feedback__item-content{
+        padding-bottom: 45px;
+    }
 }
 
 @media (max-width: 640px){
@@ -766,6 +795,7 @@ button{
     .team__content{
         padding-bottom: 0;
     }
+    
     
 }
 
@@ -856,6 +886,22 @@ button{
     .team__item-box{
         /* right: auto; */
         left: 80px;
+    }
+    /* .certificates__content{
+        width: 200px;
+    } */
+    .certificates__content img{
+        width: 200px;
+    }
+    /* .certificates__slider{
+        width: 276px;
+    } */
+    /* .swiper-slide {
+        width: 200px;
+    } */
+    .certificates__slider{
+        width: 200px;
+        margin: 0 auto;
     }
 }
 
