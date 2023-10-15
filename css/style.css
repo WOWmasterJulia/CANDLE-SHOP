@@ -368,12 +368,15 @@ button{
 /* --*FEEDBACK*-- */
 .feedback__slider{
     width: 760px;
+    overflow: hidden;
+}
+.feedback__descr{
+    margin-right: 20px;
 }
 .feedback__content{
     padding-bottom: 110px;
 }
-.feedback__item{
-    padding-left: 20px;
+.feedback__item{   
     display: grid;
     grid-template-columns: auto auto;
     gap: 0 16px;
@@ -408,7 +411,23 @@ button{
     bottom: 10px;
     right: 0;
 }
-
+.feedback__content .swiper-pagination{
+    bottom: 50px;
+}
+.swiper-pagination-bullet{
+    background-color: var(--accent-color-light_braun);
+    width: 53px;
+    height: 4px;
+    border-radius: 0;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--accent-color-dark_braun);
+}
+/* ------- */
+.sertificates__slider{
+    width: 760px;
+}
 
 
 
