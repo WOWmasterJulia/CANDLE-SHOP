@@ -30,11 +30,12 @@ const swiperOne = new Swiper(".feedback__slider", {
 });
 
 
-const swiperTwo = new Swiper(".sertificates__slider", {
+const swiperTwo = new Swiper(".certificates__slider", {
   // Optional parameters
 //   direction: "vertical",
-  loop: true,
-
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
