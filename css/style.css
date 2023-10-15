@@ -381,7 +381,10 @@ button{
     grid-template-columns: auto auto;
     gap: 0 16px;
     align-items: center;
+    /* margin-left: 15px; */
+    margin-right: 10px;
 }
+
 .feedback__item-video{
     position: relative;
 }
@@ -410,6 +413,7 @@ button{
     position: absolute;
     bottom: 10px;
     right: 0;
+    margin-right: 10px;
 }
 .feedback__content .swiper-pagination{
     bottom: 50px;
@@ -470,9 +474,12 @@ button{
 
 
 /* --*ADAPTIVES*-- */
-@media (max-width: 1050px){
+/* @media (max-width: 1100px){
+
+} */
+@media (max-width: 1100px){
     .section__inner{
-        grid-template-columns: 290px auto;
+        grid-template-columns: 260px auto;
         gap: 0 10px;
     }
     .steps__list{
@@ -480,6 +487,18 @@ button{
     }
     .steps__item{
         gap: 0 20px;
+    }
+    /* .feedback__inner{
+        grid-template-columns: 260px auto;
+    } */
+    .feedback__slider{
+        width: 690px;
+    }
+    .certificates__content img{
+        width: 280px;
+    }
+    .certificates__slider{
+        width: 880px;
     }
 }
 
