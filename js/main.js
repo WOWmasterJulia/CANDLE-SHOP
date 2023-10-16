@@ -34,22 +34,22 @@ const swiperTwo = new Swiper(".certificates__slider", {
   // Optional parameters
 //   direction: "vertical",
     loop: true,
-    slidesPerView: 3,
+    // slidesPerView: 3,
     spaceBetween: 20,
   // If we need pagination
     pagination: {
         el: ".swiper-pagination",
         },
     breakpoints: {
-     320: {
-      slidesPerView: 1, 
+     640: {
+      slidesPerView: 3, 
         },
     480: {
       slidesPerView: 2,
     //   spaceBetween: 30,
         }, 
-    640: {
-      slidesPerView: 3,
+    320: {
+      slidesPerView: 1,
     //   spaceBetween: 40,
     },
   },
