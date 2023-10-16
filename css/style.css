@@ -473,6 +473,54 @@ button{
     padding: 14px 25px 12px;
 }
 
+/* --*CONTACT FORM*-- */
+.contacts{
+    padding: 150px 0 50px;
+}
+.contacts__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.form{
+    background-color: #FFF;
+    width: 664px;
+    padding: 75px 42px 67px;
+}
+.form__title{
+    font-family: var(--title-fonts-family);
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+.form__input{
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    color: #000;
+}
+.form__input::placeholder{
+    color: #B3B3B3;
+    font-family: var(--main-fonts-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.form__btn{
+    background-color: var(--accent-color-yellow);
+    font-family: var(--main-fonts-family);
+    font-size: 14px;
+    color: #272727;
+    margin-top: 36px;
+    padding: 17px 34px;
+}
+
+
+
+
 
 
 /* --*FOOTER*-- */
@@ -581,6 +629,17 @@ button{
     }
     .certificates__content .swiper-pagination{
       text-align: center;  
+    }
+
+    .promo__link{
+        min-width: 135px; 
+        text-align: center;  
+    }
+    .promo__text{
+        padding: 0;
+    }
+    .contacts__img{
+        width: 335px;
     }
     
 }
@@ -757,6 +816,31 @@ button{
     .feedback__item-content{
         padding-bottom: 45px;
     }
+    .promo{
+        padding: 67px 0;
+    }
+    .promo__text{
+        font-size: 15px;
+    }
+    .promo__link{
+        font-size: 12px;
+    }
+    .contacts__img{
+        width: 187px;
+        object-fit: cover;
+    }
+    .form{
+        width: 440px;
+        gap: 0 20px;
+        padding: 30px 22px;
+    }
+    .form__title{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .form__btn{
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 640px){
@@ -828,6 +912,9 @@ button{
     }
     .certificates__content .swiper-pagination{
       text-align: center;  
+    }
+    .contacts{
+        padding-top: 50px;
     }
     
     
@@ -947,7 +1034,19 @@ button{
     }
     .certificates__content img{
         margin: 0 auto;
-    }   
+    }
+    .promo{
+        padding: 42px 0;
+    } 
+    .contacts__img{
+        display: none;
+    } 
+    .form__input::placeholder{  
+    font-size: 10px;
+    } 
+    .promo__text{
+      margin-right: 50px;  
+    }
 }
 
 @media (max-width: 400px){
