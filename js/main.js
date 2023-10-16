@@ -53,40 +53,25 @@ const swiperTwo = new Swiper(".certificates__slider", {
     //   spaceBetween: 40,
     },
   },
-
-  // Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-  // And if we need scrollbar
-//   scrollbar: {
-//     el: ".swiper-scrollbar",
-//   },
-
 });
 
-// const swiper = new Swiper(".swiper", {
-//   // Default parameters
-//   slidesPerView: 1,
-//   spaceBetween: 10,
-//   // Responsive breakpoints
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 2,
-//       spaceBetween: 20,
-//     },
-//     // when window width is >= 480px
-//     480: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//     },
-//     // when window width is >= 640px
-//     640: {
-//       slidesPerView: 4,
-//       spaceBetween: 40,
-//     },
-//   },
-// });
+
+const accordeon = document.querySelector('.accordeon');
+const accordeonTitles = accordeon.querySelectorAll('.accordeon__title');
+
+accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
+  accordeonTitle.addEventListener('click', function () {
+    
+    const currentText = accordeonTitle.parentElement.querySelector('.accordeon__text');
+
+    accordeonTitle.classList.toggle('accordeon__title--active');
+    currentText.classList.toggle('accordeon__text--visible');
+
+    if () {
+
+    } else {
+
+    }
+    
+  });
+});

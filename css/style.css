@@ -429,7 +429,8 @@ button{
 .swiper-pagination-bullet-active{
     background-color: var(--accent-color-dark_braun);
 }
-/* ------- */
+
+/* CERTIFICATES */
 .certificates__slider{
     width: 1135px;
     overflow: hidden;
@@ -445,8 +446,48 @@ button{
     text-align: left;
 }
 
-/* --*PROMO*-- */
+/* --*ACCORDEON*-- */
+.accordeon{
 
+}
+.accordeon__item{
+    background-color: #FAFAFA;
+    box-shadow: 0px 4px 11px 0px rgba(196, 174, 151, 0.20);
+    margin-bottom: 10px;
+}
+.accordeon__title{
+    font-family: var(--title-fonts-family);
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    padding: 16px 50px 16px 13px;
+    position: relative;
+    
+}
+.accordeon__title::after{
+    content: '';
+    background-image: url(../images/arrow.svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 26px;
+    top: 17px;
+}
+.accordeon__text{
+    /* display: none; */
+    opacity: 0;
+    max-height: 0;
+    padding: 20px 40px;
+}
+.accordeon__text.accordeon__text--visible{
+    opacity: 1;
+}
+
+
+
+/* --*PROMO*-- */
 .promo{
     background-image: url(../images/promo-bg.jpg);
     background-repeat: no-repeat;
@@ -517,10 +558,6 @@ button{
     margin-top: 36px;
     padding: 17px 34px;
 }
-
-
-
-
 
 
 /* --*FOOTER*-- */
