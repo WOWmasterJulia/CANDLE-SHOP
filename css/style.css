@@ -445,8 +445,33 @@ button{
     text-align: left;
 }
 
+/* --*PROMO*-- */
 
-
+.promo{
+    background-image: url(../images/promo-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 140px 0;
+}
+.promo__inner{
+    display: flex;
+    align-items: center;
+}
+.promo__text{
+    font-family: var(--title-fonts-family);
+    font-size: 40px;
+    color: #FFF;
+    padding-left: 56px;
+    max-width: 765px;
+    margin-right: 110px;
+}
+.promo__link{
+    color: #272727;
+    background-color: var(--accent-color-yellow);
+    display: inline-block;
+    padding: 14px 25px 12px;
+}
 
 
 
