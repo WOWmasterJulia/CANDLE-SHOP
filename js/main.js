@@ -67,10 +67,10 @@ accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
     accordeonTitle.classList.toggle('accordeon__title--active');
     currentText.classList.toggle('accordeon__text--visible');
 
-    if () {
-
+    if (currentText.classList.contains('accordeon__text--visible')) {
+      currentText.style.maxHeight = currentText.scrollHeight + 'px'
     } else {
-
+      currentText.style.maxHeight = null;
     }
     
   });
