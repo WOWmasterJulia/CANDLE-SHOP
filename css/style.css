@@ -245,9 +245,16 @@ button{
     width: 290px;
     margin: 0 auto;
     text-align: center;
+    /* ------- */
+    display: grid;
+
 }
 .products__item-img{
     margin-bottom: 8px;
+    /* ------- */
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: 1 /4;
 }
 .products__item-price{
     margin-bottom: 12px;
