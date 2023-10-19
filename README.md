@@ -1,4 +1,4 @@
-# CANDLE SHOP | HTLM, CSS,Js
+# CANDLE SHOP | HTLM, CSS, Js
 
 ![Candle shop](./images/Candle_Shop.jpg)
 
