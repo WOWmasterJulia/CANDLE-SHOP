@@ -863,6 +863,9 @@ button{
     .feedback__item-content{
         padding-bottom: 45px;
     }
+    .accordeon__title {
+        font-size: 12px;
+    }
     .promo{
         padding: 67px 0;
     }
@@ -910,7 +913,8 @@ button{
         left: 0;
         top: 0;
         transform: translateY(-110%);
-        transition: transform .5s ease;    
+        transition: transform .5s ease; 
+        z-index: 1;   
     }
     .header__menu-list.menu--open{
         top: 0;
@@ -968,6 +972,9 @@ button{
 }
 
 @media (max-width: 500px){
+    .top__content{
+        padding-top: 120px;
+    }
     .footer{
         padding: 50px 0;
         font-size: 14px;
@@ -990,14 +997,14 @@ button{
         left: 167px;
     }
     .top__content{
-        width: 180px;
+        width: 190px;
     }
     .top__title{
         font-size: 15px;
         margin-bottom: 15px;
     }
     .top__text{
-        font-size: 8px;
+        font-size: 10px;
         margin-bottom: 15px;
     }
     .top__buy{
@@ -1142,29 +1149,35 @@ button{
 
 @media (max-width: 360px){
     body{
-        font-size: 8px;
+        font-size: 10px;
     }
     .title{
         margin-bottom: 10px;
     }
+    .phone{
+        padding-left: 60px;
+    }
+    .phone::before {
+        left: 44px;
+    }
     .top__img-l{
-     width: 185px; 
+        width: 185px; 
     }
     .top__img{
-     left: auto;
-     right: 0;   
+        left: auto;
+        right: 0;   
     }
     .top__content{
         width: 200px;
-        padding: 20px 0 0;
-         position: relative;
-     z-index: 1;
+        padding: 120px 0 0;
+        position: relative;
+        z-index: 1;
     }
     .top__title{
-        font-size: 18px;
+        /* font-size: 19px; */
     }
     .top__text{
-        font-size: 10px;
+        /* font-size: 10px; */
     }
     .about{
         padding-top: 25px;
