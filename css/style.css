@@ -143,12 +143,23 @@ button{
 }
 .header{
     background-color: var(--primary-bg-color);
+        /* position: fixed; */
 }
 .header__inner{
+        /* position: fixed; */
     padding-top: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+/* Липкий хедер */
+.header__top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: inherit;
+    z-index: 10;
 }
 .menu__list{
     display: flex;
@@ -238,7 +249,7 @@ button{
 
 .top__img{
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 240px;
 }
 
