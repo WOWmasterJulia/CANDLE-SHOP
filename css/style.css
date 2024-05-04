@@ -92,6 +92,7 @@ button{
     margin: 0 auto;   
 }
 
+/* ----------------- */
 .anim-show{
     transform: translate(0px, 120%);
     opacity: 0;
@@ -102,6 +103,7 @@ button{
     opacity: 1;
     transform: translate(0px, 0px);
 }
+/* ----------------- */
 
 .section--decor{
     position: relative;
@@ -388,6 +390,15 @@ button{
 .team__item{
     position: relative;
 }
+
+.team__img{
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+}
+.team__item._active .team__img{
+    transform: scale(1);
+}
+
 .team__item-box{
     background-color: var(--accent-color-dark_braun);
     text-align: center;
@@ -401,10 +412,22 @@ button{
 .team__item-name{
     font-size: 12px;
     font-family: var(--title-fonts-family);
+    transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
 }
 .team__item-descr{
     font-size: 10px;
     font-family: var(--main-fonts-family);
+    transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+.team__item-box._active .team__item-name,
+.team__item-box._active .team__item-descr{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s ease 0.6s;
 }
 
 /* --*FEEDBACK*-- */
@@ -493,7 +516,40 @@ button{
     background-color: #FAFAFA;
     box-shadow: 0px 4px 11px 0px rgba(196, 174, 151, 0.20);
     margin-bottom: 10px;
+
+    transform: translate(-150%, 0px);
+    transition: all 0.3s ease 0s;
 }
+.accordeon._active .accordeon__item:nth-child(1){
+    transition: all 0.8s ease 0s;
+}
+.accordeon._active .accordeon__item:nth-child(2){
+    transition: all 0.8s ease 0.2s;
+}
+.accordeon._active .accordeon__item:nth-child(3){
+    transition: all 0.8s ease 0.4s;
+}
+.accordeon._active .accordeon__item:nth-child(4){
+    transition: all 0.8s ease 0.6s;
+}
+.accordeon._active .accordeon__item:nth-child(5){
+    transition: all 0.8s ease 0.8s;
+}
+.accordeon._active .accordeon__item:nth-child(6){
+    transition: all 0.8s ease 1s;
+}
+.accordeon._active .accordeon__item:nth-child(7){
+    transition: all 0.8s ease 1.2s;
+}
+.accordeon._active .accordeon__item:nth-child(8){
+    transition: all 0.8s ease 1.4s;
+}
+
+
+.accordeon._active .accordeon__item{
+    transform: translate(0px, 0px);
+}
+
 .accordeon__title{
     font-family: var(--title-fonts-family);
     font-size: 16px;
