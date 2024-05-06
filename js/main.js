@@ -76,6 +76,8 @@ accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
   });
 });
 
+
+// ANIMATION
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
