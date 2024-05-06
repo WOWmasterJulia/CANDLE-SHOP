@@ -49,8 +49,8 @@ body{
 }
 
 a{
- text-decoration: none;
- color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 ul{
@@ -69,11 +69,19 @@ button{
     cursor: pointer;
 }
 .button{
-     padding: 18px 54px;
+    padding: 18px 54px;
     background-color: var(--accent-color-yellow);
     font-size: 14px;
     font-family: var(--main-fonts-family);
+    color: var(--main-fonts-family);
     font-weight: 600;
+}
+.button:hover{
+    /* padding: 16px 44px 15px 44px; */
+    background-color: var(--accent-color-dark_braun);
+    /* font-size: 16px; */
+    color: var(--text-light-color);
+    /* font-family: #FFF; */
 }
 .title{
     margin-bottom: 15px;
@@ -207,7 +215,7 @@ button{
 
     transform: translate(0px, 120%);
     opacity: 0;
-    transition: all 0.8s ease 0s;
+    transition: all 0.6s ease 0s;
 }
 .top__title._active{
     transform: translate(0px, 0px);
@@ -220,12 +228,12 @@ button{
 
     transform: translate(0px, 120%);
     opacity: 0;
-    transition: all 0.8s ease 0s;
+    transition: all 0.6s ease 0s;
 }
 .top__text._active{
     transform: translate(0px, 0px);
     opacity: 1;
-    transition: all 0.8s ease 0.4s;
+    transition: all 0.6s ease 0.4s;
 }
 
 
@@ -233,19 +241,23 @@ button{
     padding: 18px 54px;
     background-color: var(--accent-color-yellow);
     font-size: 14px;
-    font-family: var(--main-fonts-family);
+    color: var(--main-fonts-family);
     font-weight: 600;
 
     transform: translate(0px, 120%);
     opacity: 0;
-    transition: all 0.8s ease 0s;
+    transition: all 0.6s ease 0s;
 }
 .top__buy._active{
     transform: translate(0px, 0px);
     opacity: 1;
-    transition: all 0.8s ease 0.6s;
+    transition: all 0.6s ease 0.6s;
 }
 
+.top__buy:hover{
+    background-color: var(--accent-color-dark_braun);
+    color: var(--text-light-color);
+}
 
 .top__img{
     position: absolute;
