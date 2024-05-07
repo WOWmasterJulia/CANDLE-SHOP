@@ -176,6 +176,9 @@ button{
 .menu__list-link{
    text-transform: uppercase; 
 }
+.menu__list-link:hover, .menu__list-link:focus{
+    color: var(--accent-color-dark_braun);
+}
 .phone{
     position: relative;
 }
