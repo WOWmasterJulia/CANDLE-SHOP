@@ -175,9 +175,14 @@ button{
 }
 .menu__list-link{
    text-transform: uppercase; 
+   padding-bottom: 3px;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu__list-link:hover, .menu__list-link:focus{
     color: var(--accent-color-dark_braun);
+    border-bottom: 2px solid #FFBD59;
+    transition: all .3s;
 }
 .phone{
     position: relative;
@@ -190,6 +195,10 @@ button{
     height: 20px;
     left: -23px;
     top: -3px;
+}
+.phone:hover, .phone:focus{
+    color: var(--accent-color-dark_braun);
+    transition: all .3s;
 }
 
 
@@ -755,6 +764,11 @@ button{
 .contacts__img {
     transform: scale(0);
     transition: all 0.8s ease 0s;
+}
+
+.footer__phone:hover, .footer__phone:focus, .email:hover, .email:focus{
+    color: var(--accent-color-dark_braun);
+    transition: all .3s;
 }
 
 /* --*ADAPTIVES*-- */
