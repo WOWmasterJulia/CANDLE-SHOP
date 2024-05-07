@@ -688,6 +688,10 @@ button{
     display: inline-block;
     padding: 14px 25px 12px;
 }
+.promo__link:hover{
+    background-color: var(--accent-color-dark_braun);
+    color: var(--text-light-color);
+}
 
 /* --*CONTACT FORM*-- */
 .contacts{
@@ -733,6 +737,10 @@ button{
     margin-top: 36px;
     padding: 17px 34px;
 }
+.form__btn:hover{
+    background-color: var(--accent-color-dark_braun);
+    color: var(--text-light-color);
+}
 
 
 /* --*FOOTER*-- */
@@ -757,17 +765,13 @@ button{
     display: flex;
     gap: 15px;
 }
-.footer__social-link{
-     /* ---анимация--- */
-    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-    
+
+.footer__social-link-facebook:hover svg path, .footer__social-link-instagram:hover svg path, .footer__social-link-linkedin:hover svg path{
+    fill: var(--accent-color-yellow);
 }
-.footer__social-link:hover{
-    
-}
-.footer__social-img svg{
-    /* stroke: rgb(136, 18, 18); */
-    
+.footer__social-link-youtube:hover svg path {
+    stroke: var(--accent-color-yellow);
+    background-color: transparent;
 }
 
 .contacts__inner._active .contacts__img {
