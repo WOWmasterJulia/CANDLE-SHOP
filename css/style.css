@@ -323,7 +323,10 @@ button{
     /* padding-left: 20px; */
 }
 .products__content {
-    gap: 50px 90px;
+    /* gap: 50px 90px; */
+    /* *------- */
+    display: grid;
+    gap: 30px 90px;
 }
 .products__item{
     width: 290px;
@@ -331,14 +334,17 @@ button{
     text-align: center;
     /* ------- */
     display: grid;
-
+    /* *------- */
+    grid-template-rows: subgrid;
+    grid-row: 1 /4;
+    gap: 0;
 }
 .products__item-img{
     margin-bottom: 8px;
     /* ------- */
-    display: grid;
+    /* display: grid;
     grid-template-rows: subgrid;
-    grid-row: 1 /4;
+    grid-row: 1 /4; */
 }
 .products__item-price{
     margin-bottom: 12px;
@@ -347,16 +353,19 @@ button{
     font-weight: 400;
 }
 .products__item-title{
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     font-size: 16px; 
     font-family: var(--title-fonts-family);
     font-weight: 400;
+    line-height: normal;
 }
 .products__item-text{
-    margin-bottom: 27px;
+    /* margin-bottom: 27px; */
     font-size: 12px;
 }
-
+.products__item-button {
+    margin-top: 50px;
+}
 .products__item._active .products__item-img {
     transform: scale(1);
 }
@@ -837,7 +846,8 @@ button{
         padding-left: 20px;
     }
     .products__content{
-        gap: 67px 10px ;
+        /* gap: 67px 10px ; */
+        gap: 30px 10px ;
     }
     .section__text{
       font-size: 10px;  
@@ -905,9 +915,9 @@ button{
         grid-template-columns: 200px auto;
         gap: 0 10px;
     }
-    .products__content{
+    /* .products__content{
         gap: 30px 16px;
-    }
+    } */
     .products__item{
        width: 250px; 
     }
@@ -995,6 +1005,9 @@ button{
     .about__item-img--3{
         width: 120px;
     }
+    .products__content {
+    gap: 20px 10px;
+    }
     .products__item{
        width: 200px; 
     }
@@ -1002,6 +1015,9 @@ button{
         width: 200px;
         margin-bottom: 6px;
     }
+    .products__item-button {
+    margin-top: 40px;
+}
     .button{
         font-size: 12px;
         padding: 10px 26px;
@@ -1015,7 +1031,8 @@ button{
         margin-bottom: 7px;
     }
     .products__item-title{
-        font-size: 12px;margin-bottom: 9px;
+        font-size: 12px;
+        margin-bottom: 9px;
     }
     .courses__title{
         padding: 6px;
@@ -1307,16 +1324,16 @@ button{
     .steps__item-img{
         width: 66px;
     }
-    .courses__content{
+    /* .courses__content{
         grid-template-columns: auto;
-    }
-    .courses__item,
+    } */
+    /* .courses__item,
     .courses__item img{
         width: 255px;
     }
     .courses__item img{
         margin-bottom: 26px;
-    }
+    } */
     .courses__price{
         right: 0;
         bottom: 15px;
@@ -1393,7 +1410,20 @@ button{
         margin: 0 auto 25px;
         width: 235px;
     }
-    .products__item{
+/*____________*/
+.products__content {
+    /* gap: 50px 90px; */
+    display: flex; 
+    flex-direction: column;    
+}
+.courses__item {
+        width: 250px;
+    }
+    .products__item-button {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    /* .products__item{
         width: 150px;    
     }
     .products__item-img{
@@ -1411,8 +1441,8 @@ button{
     }
     .products__item-text{
         margin-bottom: 16px;
-    }
-    .courses__item-img{
+    } */
+    /* .courses__item-img{
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 
@@ -1427,7 +1457,7 @@ button{
     .courses__price {
     right: -52px;
     bottom: 15px; 
-    } 
+    }  */
     .team__item-box{
         left: 148px;
     }
